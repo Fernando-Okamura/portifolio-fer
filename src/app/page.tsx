@@ -1,26 +1,12 @@
 import Image from "next/image";
+import { Header } from "./components/header";
 
 
 export default function Home() {
   return (
     <main>
-      
-      <div className="header">
-      
-
-      <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              width={100}
-              height={24}
-              priority
-           />
-           <div>
-            <h1>Hi, I'm Fernando!</h1>
-            <h2>Software developer</h2>
-           </div>
-     
-      <div className="experience">
+      <Header/>
+       <div className="experience">
         <h3>Experience</h3>
         <p>Java , HTML, Css, Git/Github, Ionic, Angular</p>
         <div className="experience-time">
@@ -38,17 +24,18 @@ export default function Home() {
           </div>
           <h3>Languages</h3>
           <div className="languages-info">
-            <span>  EN - Fluent</span>
-            <span> PT-BR - Native Speaker</span>
+            <span> <Image src="/usa.jpg" alt="usa bandeira" width={12} height={12} priority></Image> EN - Fluent</span> 
+            <br></br>
+          <span><Image src="/br.jpg" alt="br bandeira" width={12} height={12} priority></Image> PT-BR - Native Speaker</span>
+         
           </div>
           <h3>Education</h3>
           <div className="educational-info">
-            <span>icone emoji</span>
-            <span>ADS -Unifil</span>
+            <span><Image src="/unifil.jpg" alt="logo unifil" width={50} height={15} priority></Image> Curso de ADS - Unifil</span>
           </div>
           <span></span>
         </div>
-      </div>
+     
          
            
     </main>
