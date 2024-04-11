@@ -1,19 +1,16 @@
 import Image from "next/image";
 import { Header } from "./components/header/header";
+import { Experience } from "./components/experience/experience";
 
 import "./styles/home.scss";
+
 
 
 export default function Home() {
   return (
     <main className="container">
       <Header/>
-       <div className="experience">
-        <h3>Experience</h3>
-        <p>Java , HTML, Css, Git/Github, Ionic, Angular</p>
-        <div className="experience-time">
-
-        </div>
+       <Experience/>
         <div className="infos">
           </div>
           <div className="buttons">
@@ -36,7 +33,8 @@ export default function Home() {
             <span><Image src="/unifil.jpg" alt="logo unifil" width={50} height={15} priority></Image> Curso de ADS - Unifil</span>
           </div>
           <span></span>
-        </div>
+        
+        
      
          
            
