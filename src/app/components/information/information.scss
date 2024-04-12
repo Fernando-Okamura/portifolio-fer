@@ -1,11 +1,13 @@
-.infos{
+.infos {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    grid-area: info ;
-    gap:24px;
-    max-width:500px;
+    gap: 24px;
+    max-width: 500px;
+
+    grid-area: info;
+
 
     .languages-info{
         display: flex;
@@ -16,5 +18,17 @@
     }
     span{
         color:var(--text-secondary);
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    @media (min-width: 768px) {
+        align-items: flex-start;
+        
+        span {
+            font-size: 20px;
+            line-height: 36px;
+            text-align: start;
+        }
     }
 }

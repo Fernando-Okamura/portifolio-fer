@@ -3,15 +3,26 @@ import { InstaIcon } from "../icons/insta-icon";
 import { LinkedInIcon } from "../icons/linkedin-icon";
 import { TwitterIcon } from "../icons/twitter-icon";
 
-import "./social-btns.scss";
+import "./social-btns.scss"
+
 
 export function SocialBtns(){
     return(
 <div className="social">
-    <a href="https://www.instagram.com/okamurarodrigues/">InstaIcon</a>
-    <a href="www.linkedin.com/in/fernando-okamura-51399b295">LinkedInIcon</a>
-    <a href="https://github.com/Fernando-Okamura">GitHubIcon</a>
-    <a href="https://twitter.com/FerOkamura">TwitterIcon</a>
+    <a href="https://www.instagram.com/okamurarodrigues/">
+        <InstaIcon/>
+
+        </a>
+    <a href="www.linkedin.com/in/fernando-okamura-51399b295">
+        <LinkedInIcon/>
+        </a>
+    <a href="https://github.com/Fernando-Okamura">
+        <GitHubIcon/>
+        </a>
+    <a href="https://twitter.com/FerOkamura">
+        <TwitterIcon/>
+
+        </a>
 </div>
 )
 }

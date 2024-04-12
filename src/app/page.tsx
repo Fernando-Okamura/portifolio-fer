@@ -1,10 +1,11 @@
-import Image from "next/image";
-import { Header } from "./components/header/header";
-import { Experience } from "./components/experience/experience";
+import Image from 'next/image'
+import { Experience } from './components/experience/experience'
+import { Header } from './components/header/header'
+import { Info } from './components/information/information'
 
-import "./styles/home.scss";
-import { Info } from "./components/information/information";
-import { SocialBtns } from "./components/social-btns/social-btns";
+import "./styles/home.scss"
+import { EmailIcon } from './components/icons/email-icon'
+import { SocialBtns } from './components/social-btns/social-btns'
 
 
 
@@ -17,13 +18,12 @@ export default function Home() {
         
           <div className="buttons">
             <SocialBtns/>
-            </div>
-            <a className="btn-primary" href="mailto:fokamura10@gmail.com"></a>
-              contact me
-              <img src= "/email-icon.svg" alt="email icon" width={22} height={22} ></img>
            
-
-    
+            <a className="btn-primary" href="mailto:fokamura10@gmail.com">
+              contact me
+              <EmailIcon/>
+          </a>
+        </div>
     </main>
   )
 }
