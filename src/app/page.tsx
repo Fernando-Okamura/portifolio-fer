@@ -4,6 +4,7 @@ import { Experience } from "./components/experience/experience";
 
 import "./styles/home.scss";
 import { Info } from "./components/information/information";
+import { SocialBtns } from "./components/social-btns/social-btns";
 
 
 
@@ -15,11 +16,13 @@ export default function Home() {
         <Info/>
         
           <div className="buttons">
-            <div className="social">
-
+            <SocialBtns/>
             </div>
-            <button>contact me</button>
-</div>
+            <a className="btn-primary" href="mailto:fokamura10@gmail.com"></a>
+              contact me
+              <img src= "/email-icon.svg" alt="email icon" width={22} height={22} ></img>
+           
+
     
     </main>
   )

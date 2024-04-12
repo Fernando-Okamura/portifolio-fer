@@ -3,7 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    grid-area: info ;
     gap:24px;
+    max-width:500px;
 
     .languages-info{
         display: flex;
